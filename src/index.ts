@@ -39,8 +39,10 @@ const info = (...messages: any) => log('INFO', ...messages);
 const warn = (...messages: any) => log('WARN', ...messages);
 const error = (...messages: any) => log('ERROR', ...messages);
 
-export const ExaLogger = {
+const ExaLogger = {
   info,
   warn,
   error,
 };
+
+export default ExaLogger;
