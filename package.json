@@ -1,11 +1,13 @@
 {
   "name": "exa-logger",
-  "version": "1.0.1",
+  "version": "1.0.11",
   "description": "Advanced JavaScript logger for debugging.",
   "main": "dist/index.js",
-  "types": "types/types.d.ts",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "build": "npx tsc",
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "prepublishOnly": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -15,6 +17,8 @@
   "author": "Rainer Regan",
   "license": "ISC",
   "devDependencies": {
+    "@changesets/cli": "^2.27.7",
+    "tsup": "^8.2.4",
     "typescript": "^5.5.4"
   },
   "dependencies": {
