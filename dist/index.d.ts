@@ -1,11 +1,4 @@
-type LogLevel = 'INFO' | 'WARN' | 'ERROR';
-
 declare const ExaLogger: {
-    log: (level: LogLevel, ...messages: any) => {
-        info: (...msgs: any) => any;
-        warn: (...msgs: any) => any;
-        error: (...msgs: any) => any;
-    };
     info: (...messages: any) => {
         info: (...msgs: any) => any;
         warn: (...msgs: any) => any;
@@ -23,4 +16,4 @@ declare const ExaLogger: {
     };
 };
 
-export { ExaLogger };
+export { ExaLogger as default };

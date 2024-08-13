@@ -30,7 +30,7 @@ var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: tru
 // src/index.ts
 var src_exports = {};
 __export(src_exports, {
-  ExaLogger: () => ExaLogger
+  default: () => src_default
 });
 module.exports = __toCommonJS(src_exports);
 var import_dayjs = __toESM(require("dayjs"));
@@ -66,12 +66,8 @@ var info = (...messages) => log("INFO", ...messages);
 var warn = (...messages) => log("WARN", ...messages);
 var error = (...messages) => log("ERROR", ...messages);
 var ExaLogger = {
-  log,
   info,
   warn,
   error
 };
-// Annotate the CommonJS export names for ESM import in node:
-0 && (module.exports = {
-  ExaLogger
-});
+var src_default = ExaLogger;

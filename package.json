@@ -1,6 +1,6 @@
 {
   "name": "exa-logger",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "Advanced JavaScript logger for debugging.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",

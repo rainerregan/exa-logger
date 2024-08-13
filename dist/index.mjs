@@ -32,11 +32,11 @@ var info = (...messages) => log("INFO", ...messages);
 var warn = (...messages) => log("WARN", ...messages);
 var error = (...messages) => log("ERROR", ...messages);
 var ExaLogger = {
-  log,
   info,
   warn,
   error
 };
+var src_default = ExaLogger;
 export {
-  ExaLogger
+  src_default as default
 };
