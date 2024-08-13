@@ -2,7 +2,8 @@
   "name": "exa-logger",
   "version": "1.0.0",
   "description": "Advanced JavaScript logger for debugging.",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "types/types.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,5 +12,12 @@
     "debug"
   ],
   "author": "Rainer Regan",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "dayjs": "^1.11.12"
+  }
 }
